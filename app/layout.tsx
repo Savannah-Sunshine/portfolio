@@ -5,20 +5,21 @@ import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://savannah-smith.is-a.dev"),
   title: {
-    default: "chronark.com",
-    template: "%s | chronark.com",
+    default: "Savannah Portfolio",
+    template: "%s | Savannah Portfolio",
   },
   description: "Co-founder of unkey.dev and founder of planetfall.io",
   openGraph: {
-    title: "chronark.com",
+    title: "Savannah Portfolio",
     description:
       "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+    url: "https://savannah-smith.is-a.dev",
+    siteName: "Savannah Portfolio",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "https://savannah-smith.is-a.dev/og.png",
         width: 1920,
         height: 1080,
       },
@@ -65,6 +66,7 @@ export default function RootLayout({
       <head>
         <Analytics />
       </head>
+      {/* Adds size of screen on bottom left when in dev */}
       <body
         className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
           }`}

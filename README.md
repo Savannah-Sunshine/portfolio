@@ -1,7 +1,7 @@
 <div align="center">
-    <a href="https://chronark.com"><h1 align="center">chronark.com</h1></a>
+    <a href="https://savannah-smith.is-a.dev"><h1 align="center">savannah-smith.is-a.dev</h1></a>
 
-My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Upstash](https://upstash.com?ref=chronark.com), [Contentlayer](https://www.contentlayer.dev/) and deployed to [Vercel](https://vercel.com/).
+My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Upstash](https://upstash.com?ref=chronark.com) database, [Contentlayer](https://www.contentlayer.dev/) and deployed to [Vercel](https://vercel.com/).
 
 </div>
 
@@ -12,22 +12,15 @@ My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](h
 
 ## Running Locally
 
+Requires a `.env` file with `UPSTASH_REDIS_REST_URL=` and `UPSTASH_REDIS_REST_TOKEN=`
 
-```sh-session
-git clone https://github.com/chronark/chronark.com.git
-cd chronark.com
-```
-
-
-Create a `.env` file similar to [`.env.example`](https://github.com/chronark/chronark.com/blob/main/.env.example).
-
-Then install dependencies and run the development server:
+Installing dependencies and running the development server:
 ```sh-session
 pnpm install
 pnpm dev
 ```
 
+## Notes
+Rome is my linter
 
-## Cloning / Forking
-
-Please remove all of my personal information (projects, images, etc.) before deploying your own version of this site.
+Used [chronark's template site](https://chronark.com/) as the basis for this project, so I don't have to reinvent the wheel in UI design.
